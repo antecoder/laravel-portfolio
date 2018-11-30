@@ -1,0 +1,6 @@
+{
+  "portfolio_title": "Design Portfolio Demo",
+  "portfolio_subtitle": "Your subtitle",
+  "portfolio_description": "This is a demo portfolio built using <a href=https://github.com/romannurik/portfolio>this template</a>. Take a look at a real portfolio based on the template <a href=http://roman.nurik.net/portfolio/>here</a>.</p><p>Lorem ipsum In in consequat in sunt commodo voluptate quis amet dolore anim ex in fugiat cillum ad Ut id <a href=http://www.google.com>laboris</a> irure ut id esse Duis et Ut sint elit cupidatat aliquip consectetur ut consectetur.</p><p>Lorem ipsum Proident proident esse ut officia ut ad dolor sint proident in dolor ad mollit id ullamco dolor et nostrud.",
+  "portfolio_footer": "Original template by <a target=_blank href=http://roman.nurik.net>Roman Nurik</a>, ported to Laravel/PHP by <a href=https://joeydalu.me target=_blank>Joey Dalu</a>. Find source code on <a href=https://github.com/josephdalughut/laravel-portfolio target=_blank>github</a> or original version <a href=https://github.com/romannurik/portfolio target=_blank>here</a>."
+}
