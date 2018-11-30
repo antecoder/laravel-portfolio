@@ -106,7 +106,7 @@ Each project has the following json structure:
 - pages: An array of *project pages* to showcase some parts of the project. This naturally appears beside the project description if set, 
 or is omitted if no pages are added. See the section below for more info about project pages.
 
-##### Pages
+#### Project Pages
 
 Each project can have several pages which showcase parts of the project. Each page can house different content:
 - A screenshot/video of a mobile app which can be framed with several devices.
