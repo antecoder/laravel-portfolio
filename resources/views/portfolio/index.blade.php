@@ -9,9 +9,9 @@
     'title' => 'Portfolio', 'css' => 'css/portfolio.css'
 ])
 <div class=page-content>
-    <header><h1>{{$meta->portfolio_title}}</h1>
-        <div class=subtitle><p>{{$meta->portfolio_subtitle}}</p></div>
-        <div class=intro><p>{!! $meta->portfolio_description !!}</p>
+    <header><h1>{{$meta && $meta->portfolio_title ? $meta->portfolio_title : ""}}</h1>
+        <div class=subtitle><p>{{$meta && $meta->portfolio_subtitle ? $meta->portfolio_subtitle : ""}}</p></div>
+        <div class=intro><p>{!! $meta && $meta->portfolio_description ? $meta->portfolio_description : "" !!}</p>
         </div>
     </header>
     <main>
@@ -68,7 +68,9 @@
             @endforeach
         @endif
     </main>
-    <footer><p>{!! $meta->portfolio_footer !!}</p></footer>
+    @if($meta && $meta->portfolio_footer)
+        <footer><p>{!! $meta->portfolio_footer !!}</p></footer>
+    @endif
 </div>
 <script src={{"js/lib/jquery/dist/jquery.min.js"}}></script>
 <script src={{"js/lib/fastclick/lib/fastclick.js"}}></script>

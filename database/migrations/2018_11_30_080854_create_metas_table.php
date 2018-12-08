@@ -16,9 +16,9 @@ class CreateMetasTable extends Migration
         Schema::create('metas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('portfolio_title');
-            $table->string('portfolio_subtitle');
-            $table->text('portfolio_description');
-            $table->text('portfolio_footer');
+            $table->string('portfolio_subtitle')->nullable();
+            $table->text('portfolio_description')->nullable();
+            $table->text('portfolio_footer')->nullable();
             $table->boolean('enabled')->default(true);
             $table->timestamps();
         });
