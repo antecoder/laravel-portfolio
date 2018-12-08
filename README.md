@@ -19,12 +19,16 @@ You can find a demo of this application [here](https://laravel-portfolioapp.hero
     git clone https://github.com/josephdalughut/laravel-portfolio.git
     ```
 
-3. Rename the **.env.example** file in the root folder to **.env**
-4. Generate an **APP_KEY** for your shiny new Laravel application.
+3. Install dependencies:
+    ```
+    composer install
+    ```
+4. Rename the **.env.example** file in the root folder to **.env**
+5. Generate an **APP_KEY** for your shiny new Laravel application.
     ```
     php artisan key:generate 
     ```
-5. Populate your **.env** with your environment variables. You'll need to have a database (obviously) setup first. Either MySQL or PostGres db is fine:
+6. Populate your **.env** with your environment variables. You'll need to have a database (obviously) setup first. Either MySQL or PostGres db is fine:
     ```
     DB_CONNECTION=mysql #or pgsql for postgres
     DB_HOST=127.0.0.1
@@ -36,19 +40,19 @@ You can find a demo of this application [here](https://laravel-portfolioapp.hero
     
     If you're deploying this somewhere other than on your localhost, you'll need to change the *DB_HOST* above to your database host.
 
-6. Run migrations to populate your database with the tables needed.
+7. Run migrations to populate your database with the tables needed.
 
     ```
     php artisan migrate
     ```
 
-7. Seed the database with the initial dummy content provided by [Roman](https://github.com/romannurik/portfolio):
+8. Seed the database with the initial dummy content provided by [Roman](https://github.com/romannurik/portfolio):
 
     ```
     php artisan db:seed
     ```
 
-8. Serve / deploy your shiny new portfolio and look at it! Such awesomeness!
+9. Serve / deploy your shiny new portfolio and look at it! Such awesomeness!
     ```
     php artisan serve
     ```
